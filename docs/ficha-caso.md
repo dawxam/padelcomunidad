@@ -8,7 +8,7 @@
 | N.º de caso | 11 |
 | Comunidad (razón social) | Comunidad de Propietarios La Marina |
 | CIF ficticio | M-00000001 |
-| Domicilio | La Marina |
+| Domicilio | Calle La Marina, 67 |
 | Correo de contacto | la.marina@gmail.com |
 | Teléfono Bizum de la comunidad | 619 154 426 |
 | N.º de pistas y nombres | Pista 1 y Pista 2 |
