@@ -50,7 +50,8 @@
 
 .menu__enlace {
   @include objetivo-tactil;
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   color: var(--color-texto);
   text-decoration: none;
