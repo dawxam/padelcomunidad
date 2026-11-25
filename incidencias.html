@@ -3,9 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incidencias</title>
+  <title>Incidencias · Pádel Comunidad de Propietarios La Marina</title>
 </head>
 <body>
+<header class="cabecera">
+    <div class="cabecera__interior contenedor">
+      <a class="cabecera__marca" href="index.html">Pádel Comunidad de Propietarios La Marina</a>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Turnos</a></li>
+          <li><a class="menu__enlace" href="mis-turnos.html">Mis turnos</a></li>
+          <li><a class="menu__enlace" href="normas.html">Normas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main id="contenido" class="contenedor"><br>
+    <form action="incidencias.html" method="get">
+      <div>
+        <fieldset>
+          <legend>Tipo de incidencia:</legend>
+
+          <div>
+            <input type="radio" id="estado" name="drone" value="estado" checked />
+            <label for="estado">Estado de la pista</label>
+          </div>
+
+          <div>
+            <input type="radio" id="iluminacion" name="drone" value="iluminacion" />
+            <label for="iluminacion">Iluminación o acceso</label>
+          </div>
+
+          <div>
+            <input type="radio" id="reserva" name="drone" value="reserva" />
+            <label for="reserva">Reserva o pago</label>
+          </div>
+
+          <div>
+            <input type="radio" id="convivencia" name="drone" value="convivencia" />
+            <label for="convivencia">Queja de convivencia</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <input type="text" name="pista" id="pista" placeholder="Indicala la pista afectada" required>
+      </div>
+
+      <div>
+        <label for="fecha">Selecciona la fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
+
+      <div>
+        <textarea name="descripcion" id="descripcion" placeholder="Describe la incidencia" required></textarea>
+      </div>
+
+      <div>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+      </div>
+
+      <div>
+        <input type="checkbox" name="privacidad" id="privacidad" required>
+        <label for="privacidad">Acepto la política de privacidad</label>
+      </div>
+
+      <button type="submit">Enviar incidencia</button>
+    </form>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__interior contenedor">
+      <address class="pie__datos">
+        Comunidad de Propietarios La Marina · CIF M-00000001<br>
+        Calle La Marina, 67<br>
+        <a href="mailto:la.marina@gmail.com">la.marina@gmail.com</a>
+      </address>
+      <nav aria-label="Legal">
+        <ul class="pie__enlaces">
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="normas.html">Normas de uso</a></li>
+          <li><a href="incidencias.html">Incidencias</a></li>
+        </ul>
+      </nav>
+      <p class="pie__nota"><small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small></p>
+    </div>
+  </footer>
 </body>
 </html>
